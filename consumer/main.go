@@ -23,8 +23,6 @@ func main() {
 	default:
 		kafkaConfig.Consumer.Group.Rebalance.Strategy = sarama.BalanceStrategyRange
 	}
-
-	kafkaConfig.Consumer.Group.Rebalance.Strategy = sarama.BalanceStrategyRange
 	kafkaConfig.Consumer.Offsets.Initial = sarama.OffsetNewest
 
 	// Specify brokers address. This is default one
